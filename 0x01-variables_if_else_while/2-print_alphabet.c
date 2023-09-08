@@ -11,6 +11,7 @@ int main(void)
 	for (chr = 97 ; chr <= 122 ; chr++)
 	{
 		putchar(chr);
+		printf("\n");
 	}
 	return (0);
 }
