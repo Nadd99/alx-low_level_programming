@@ -12,14 +12,14 @@ int main(void)
 	for (n = 47 ; n <= 58 ; n++)
 	for (m = 47 ; m <= 58 ; m++)
 	{
-		putchar(n);
-		putchar(m);
 		if (n == m)
 		{
 			n++;
 			m++;
 			continue;
 		}
+		putchar(n);
+		putchar(m);
 		putchar(',');
 		putchar(' ');
 	}
