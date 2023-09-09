@@ -9,8 +9,8 @@ int main(void)
 	int n;
 	int m;
 
-	for (n = 47 ; n <= 58 ; n++)
-	for (m = 47 ; m <= 58 ; m++)
+	for (n = 48 ; n <= 58 ; n++)
+	for (m = 48 ; m <= 58 ; m++)
 	{
 		if (n == m)
 		{
