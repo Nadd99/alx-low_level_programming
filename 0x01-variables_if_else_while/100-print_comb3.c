@@ -16,7 +16,7 @@ int main(void)
 		putchar(m);
 		putchar(',');
 		putchar(' ');
-		if (n > m || n == m)
+		if (n == m)
 		{
 			continue;
 		}
