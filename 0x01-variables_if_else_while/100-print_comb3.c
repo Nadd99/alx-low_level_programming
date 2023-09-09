@@ -9,10 +9,10 @@ int main(void)
 	int n;
 	int m;
 
-	for (n = 48 ; n <= 57 ; n++)
-	for (m = 48 ; m <= 57 ; m++)
+	for (n = 0 ; n <= 9 ; n++)
+	for (m = n +1 ; m <= 9 ; m++)
 	{
-		if (n == m)
+		if (n == 8 && m ==9)
 		{
 			continue;
 		}
