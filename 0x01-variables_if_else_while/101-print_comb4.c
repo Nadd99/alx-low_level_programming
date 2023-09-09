@@ -7,21 +7,20 @@
  */
 int main(void)
 {
-	int digit1, digit2, digit3;
+	int n, m, y;
 
-	for (digit1 = 0; digit1 < 8; digit1++)
+	for (n = 0; n < 8; n++)
 	{
-		for (digit2 = digit1 + 1; digit2 < 9; digit2++)
+		for (m = n + 1; m < 9; m++)
 		{
-			for (digit3 = digit2 + 1; digit3 < 10; digit3++)
+			for (y = m + 1; y < 10; y++)
 			{
-				putchar((digit1 % 10) + '0');
-				putchar((digit2 % 10) + '0');
-				putchar((digit3 % 10) + '0');
+				putchar((n % 10) + '0');
+				putchar((m % 10) + '0');
+				putchar((y % 10) + '0');
 
-				if (digit1 == 7 && digit2 == 8 && digit3 == 9)
+				if (n == 7 && m == 8 && y == 9)
 					continue;
-				
 				putchar(',');
 				putchar(' ');
 			}
