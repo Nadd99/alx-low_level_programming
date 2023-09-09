@@ -9,15 +9,15 @@ int main(void)
 	int n;
 	int m;
 
-	for (n = 48 ; n <= 57 ; n++)
-	for (m = n + 1 ; m < 58 ; m++)
+	for (n = 0 ; n <= 9 ; n++)
+	for (m = n + 1 ; m < 10 ; m++)
 	{
+		putchar((digit1 % 10) + '0');
+		putchar((digit2 % 10) + '0');
 		if (n == 56 && m == 57)
 		{
 			continue;
 		}
-		putchar(n);
-		putchar(m);
 		putchar(',');
 		putchar(' ');
 	}
