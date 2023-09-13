@@ -2,6 +2,8 @@
 /**
  * print_last_digit - entry
  *
+ *@x: extract the last digit from x
+ *
  * Return: value of last digit
  */
 int print_last_digit(int x)
