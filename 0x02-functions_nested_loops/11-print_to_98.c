@@ -24,4 +24,21 @@ void print_to_98(int n)
 			}
 		}
 	}
+	else
+	{
+		for (; n >= 98; n--)
+		{
+			if (n == 98)
+			{
+				_putchar('n');
+				_putchar('\n');
+			}
+			else
+			{
+				_putchar('n');
+				_putchar(',');
+				_putchar(' ');
+			}
+		}
+	}
 }
