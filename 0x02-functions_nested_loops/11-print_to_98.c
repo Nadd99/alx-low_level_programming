@@ -6,19 +6,21 @@
  */
 void print_to_98(int n)
 {
-	if (n <= 98)
+	int i;
+
+	if (i <= 98)
 	{
-		for (; n <= 98; n++)
+		for (i = n; i <= 98; i++)
 		{
-			if (n == 98)
+			if (i == 98)
 			{
-				_putchar('n');
+				_putchar('i');
 				_putchar('\n');
 				break;
 			}
 			else
 			{
-				_putchar('n');
+				_putchar('i');
 				_putchar(',');
 				_putchar(' ');
 			}
@@ -26,16 +28,16 @@ void print_to_98(int n)
 	}
 	else
 	{
-		for (; n >= 98; n--)
+		for (i = n ; i >= 98; i--)
 		{
-			if (n == 98)
+			if (i == 98)
 			{
-				_putchar('n');
+				_putchar('i');
 				_putchar('\n');
 			}
 			else
 			{
-				_putchar('n');
+				_putchar('i');
 				_putchar(',');
 				_putchar(' ');
 			}
