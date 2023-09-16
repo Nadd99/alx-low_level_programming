@@ -2,7 +2,7 @@
 /**
  * _isupper - checks for uppercase characters
  * @c: character to be tested
- * Return: 1
+ * Return: 0
  */
 int _isupper(int c)
 {
