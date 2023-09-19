@@ -1,14 +1,14 @@
 #include "main.h"
 /**
  * _strlen - returns length of string
- * @len: string to be counted
+ * @s: string to be counted
  * Return: lenght
  */
 int _strlen(char *s)
 {
 	int len;
 
-	for (; *s != '\0' ; s++)
+	for (len = 0 ; *s != '\0' ; s++)
 	{
 		len++;
 	}
