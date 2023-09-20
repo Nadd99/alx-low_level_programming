@@ -3,7 +3,7 @@
  * print_numbers - function that print all numbers from
  * 0 to 9
  *
- * Return: returns nothing
+ * Return: numbers
  * */
 void print_numbers(void)
 {
@@ -13,5 +13,5 @@ void print_numbers(void)
 	{
 		_putchar(i + '0');
 	}
-		_putchar('\n/);
+		_putchar('\n');
 }

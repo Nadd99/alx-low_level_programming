@@ -2,7 +2,7 @@
 /**
  * print_most_numbers - prints numbers from 0 o 9 except 2,4
  *
- * Return: 0
+ * Return: numbers
  */
 
 void print_most_numbers(void)
@@ -19,5 +19,4 @@ void print_most_numbers(void)
 		putchar(i + '0');
 		putchar('\n');
 	}
-	return (0);
 }
