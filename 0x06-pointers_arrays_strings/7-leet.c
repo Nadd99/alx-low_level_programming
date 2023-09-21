@@ -3,7 +3,7 @@
   * leet - Encodes a string into 1337
   * Return: The encoded string
   */
-char *leet(char *)
+char *leet(char *s)
 {
 	int a = 0, b = 0, l = 5;
 	char r[5] = {'A', 'E', 'O', 'T', 'L'};
