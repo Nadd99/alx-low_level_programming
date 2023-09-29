@@ -8,16 +8,16 @@
   */
 int is_prime_number(int n)
 {
-	return (if_prime(n, 1));
+	return (check_if_prime(n, 1));
 }
 
 /**
-  * if_prime - if number is prime
+  * check_if_prime - if number is prime
   * @n: number to be checked
   * @i: teration times
   * Return: 1 for prime, else 0
   */
-int if_prime(int n, int i)
+int check_if_prime(int n, int i)
 {
 	if (n <= 1)
 		return (0);
@@ -28,5 +28,5 @@ int if_prime(int n, int i)
 	if ((n / i) < i)
 		return (1);
 
-	return (if_prime(n, i + 1));
+	return (check_if_prime(n, i + 1));
 }
