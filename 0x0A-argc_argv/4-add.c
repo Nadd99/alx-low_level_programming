@@ -17,7 +17,7 @@ int main(int argc, char *argv[])
 	{
 		printf("0\n");
 	}
-	else if (atoi(argv[i]) < 0 || atoi(argv[i]) > 9)
+	else if (atoi(argv[i]) < '0' || atoi(argv[i]) > '9')
 	{
 		printf("Error\n");
 		return (1);
