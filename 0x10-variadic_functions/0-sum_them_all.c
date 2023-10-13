@@ -3,6 +3,7 @@
 /**
 * sum_them_all - sum
 * @n: n args
+*
 * Return: void
 */
 int sum_them_all(const unsigned int n, ...)
