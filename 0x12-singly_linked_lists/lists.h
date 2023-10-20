@@ -1,5 +1,5 @@
-#ifndef _LISTS_H_
-#define _LISTS_H__
+#ifndef LISTS_H
+#define LISTS_H
 
 
 /**
