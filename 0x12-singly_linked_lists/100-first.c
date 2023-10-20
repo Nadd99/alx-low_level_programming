@@ -1,4 +1,6 @@
-#include "list.h"
+#include "lists.h"
+#include <stdio.h>
+#include <stdlib.h>
 
 void first(void) __attribute__ ((constructor));
 
