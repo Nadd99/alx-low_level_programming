@@ -1,5 +1,5 @@
-#ifndef _LINKED_LIST_
-#define _LINKED_LIST_
+#ifndef _LISTS_H_
+#define _LISTS_H__
 
 
 /**
