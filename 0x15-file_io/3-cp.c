@@ -10,7 +10,7 @@
 int main(int argc, char **argv)
 {
 	char buff[BUFFER_SIZE];
-	int fd_read, fd_write, i, n;
+	int fd_read, fd_write, i, n, var;
 
 	if (argc != 3)
 	{
@@ -26,9 +26,9 @@ int main(int argc, char **argv)
 	}
 
 	fd_write = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
-	while ((read(fd_read, buff, BUFFER_SIZE)) > 0)
+	while ((var = read(fd_read, buff, BUFFER_SIZE)) > 0)
 	{
-		if (fd_write < 0)
+		if (fd_write < 0 || write(fd_write, buff, var) != var)
 		{
 			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
 			close(fd_read);
