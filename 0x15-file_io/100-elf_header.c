@@ -1,9 +1,26 @@
-#include "main.h"
-
 /*
  * File: 100-elf_header.c
  * Auth: Nad hopes so.
  */
+
+#include <elf.h>
+#include <stdlib.h>
+#include <stdio.h>
+#include <unistd.h>
+#include <fcntl.h>
+#include <sys/types.h>
+#include <sys/stat.h>
+
+void check_elf(unsigned char *e_ident);
+void print_magic(unsigned char *e_ident);
+void print_class(unsigned char *e_ident);
+void print_data(unsigned char *e_ident);
+void print_version(unsigned char *e_ident);
+void print_abi(unsigned char *e_ident);
+void print_osabi(unsigned char *e_ident);
+void print_type(unsigned int e_type, unsigned char *e_ident);
+void print_entry(unsigned long int e_entry, unsigned char *e_ident);
+void close_elf(int elf);
 
 /**
  * check_elf - nad
@@ -290,11 +307,4 @@ int main(int __attribute__((__unused__)) argc, char *argv[])
 	free(header);
 	close_elf(fd);
 	return (0);
-}		printf("%02x", e_ident[x]);
-
-		if (x == EI_NIDENT - 1)
-			printf("\n");
-		else
-			printf(" ");
-	}
 }
